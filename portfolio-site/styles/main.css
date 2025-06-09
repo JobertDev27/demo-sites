@@ -1,3 +1,10 @@
+:root {
+  --main: #0a0a0a;
+  --accent: #daa520;
+}
+
 body {
-  background-color: black;
+  background-color: var(--main);
+  color: var(--accent);
+  font-family: "Noto serif";
 }
