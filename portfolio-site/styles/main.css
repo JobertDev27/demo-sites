@@ -21,10 +21,6 @@ h2 {
   color: var(--accent);
 }
 
-main {
-  height: 10000px;
-}
-
 section {
   position: relative;
 }
@@ -126,7 +122,7 @@ section {
 }
 
 .about-content {
-  width: 500px;
+  width: 700px;
   padding: 0 20px;
   transform: translate(10vw, 10%);
   display: flex;
@@ -134,8 +130,13 @@ section {
   flex-wrap: wrap;
 }
 
-.about-content h2 {
+.about-heading {
+  font-size: 3rem;
   margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 1.3rem;
 }
 
 #qoute {
@@ -164,8 +165,17 @@ section {
   margin-bottom: 20px;
 }
 
+#portfolio {
+  padding: 100px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .portfolio-heading {
-  font-size: 15vw;
+  font-size: 5vw;
   padding-left: 20px;
   position: relative;
 }
@@ -181,6 +191,105 @@ section {
   -webkit-text-stroke: 1px var(--accent);
 }
 
+.works {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.works img {
+  width: 250px;
+  object-fit: contain;
+}
+
+.img-cont {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-cont {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  height: 100%;
+  gap: 20px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+#contact {
+  margin: 150px 0;
+  display: flex;
+  justify-content: space-evenly;
+  height: fit-content;
+}
+
+.contact-left {
+  color: var(--accent);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.contact-right {
+  width: 300px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.input-section input,
+.input-section textarea {
+  background-color: black;
+  border: 2px solid var(--accent);
+}
+
+button {
+  font-size: 1.3rem;
+  padding: 5px 15px 5px 30px;
+  background-color: var(--accent);
+  border-radius: 25px;
+  border: 2px solid black;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.submit-logo {
+  position: absolute;
+  top: 6px;
+  left: 5px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 900px) {
   .about-text-bg {
     font-size: 150px;
@@ -193,6 +302,10 @@ section {
   #qoute {
     flex-direction: column;
     align-items: center;
+  }
+
+  .about-content {
+    width: 500px;
   }
 }
 
@@ -210,7 +323,15 @@ section {
   }
 
   .about-content {
-    width: 350px;
+    width: 300px;
+  }
+
+  .about-heading {
+    font-size: 1.5rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
   }
 
   .about-down {
@@ -220,5 +341,10 @@ section {
   .qoute-body {
     font-size: 1.2rem;
     max-width: 300px;
+  }
+
+  #contact {
+    flex-direction: column;
+    padding-left: 20px;
   }
 }
