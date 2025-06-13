@@ -310,6 +310,22 @@ footer {
 }
 
 @media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .profile-content {
+    padding: 0 60px;
+  }
+
+  .profile-image {
+    height: 250px;
+  }
+
+  .profile-info {
+    margin-top: 100px;
+  }
+
   .bg {
     object-fit: cover;
   }
