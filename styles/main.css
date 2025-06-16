@@ -223,7 +223,8 @@ section {
   gap: 20px;
 }
 
-.hidden {
+.hidden,
+.less-hidden {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -311,15 +312,27 @@ footer {
 
 @media (max-width: 500px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
   }
 
   .profile-content {
-    padding: 0 60px;
+    padding: 0 50px;
+  }
+
+  .svgs {
+    width: 24px;
+  }
+
+  .section-pg {
+    font-size: 1.2rem;
   }
 
   .profile-image {
-    height: 250px;
+    height: 230px;
   }
 
   .profile-info {
@@ -354,6 +367,10 @@ footer {
     display: none;
   }
 
+  #qoute {
+    padding: 100px 0 50px;
+  }
+
   .qoute-body {
     font-size: 1.2rem;
     max-width: 300px;
@@ -362,5 +379,9 @@ footer {
   #contact {
     flex-direction: column;
     padding-left: 20px;
+  }
+
+  .qoute-img {
+    height: 250px;
   }
 }
